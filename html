@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>মেমরি চ্যালেঞ্জ গেম</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>🧠 মেমরি চ্যালেঞ্জ</h1>
+            <div class="stats">
+                <div class="level-box">লেভেল <span id="levelValue">1</span></div>
+                <div class="items-box">আইটেম <span id="itemsCount">2</span></div>
+            </div>
+        </div>
+
+        <div class="status-area">
+            <div id="statusMessage">👉 "স্টার্ট গেম" বাটনে ক্লিক করুন</div>
+        </div>
+
+        <div class="button-panel" id="buttonPanel">
+            <!-- ৬টি বোতাম JS দিয়ে তৈরি হবে বা সরাসরি HTML -->
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="ctrl-btn primary">🎮 স্টার্ট গেম</button>
+            <button id="replayBtn" class="ctrl-btn" disabled>🔄 ক্রম দেখান</button>
+            <button id="resetBtn" class="ctrl-btn danger">🗑️ রিসেট</button>
+            <button id="nextBtn" class="ctrl-btn success" disabled>⭐ পরবর্তী লেভেল</button>
+        </div>
+
+        <div class="instructions">
+            <p>⭐ <strong>কিভাবে খেলবেন:</strong> গেম শুরু হলে কিছু বোতাম ক্রমে জ্বলবে। সেই ক্রম মনে রাখুন এবং একই ক্রমে বোতামে ক্লিক করুন। লেভেল বাড়লে আইটেম সংখ্যা (ক্রমের দৈর্ঘ্য) বাড়বে। ভুল করলে গেম শেষ।</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
